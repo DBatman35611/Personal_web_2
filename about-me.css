@@ -1,0 +1,50 @@
+.about-me {
+    height: auto;
+    width: 100vw;
+    background: rgb(10, 0, 155);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-me-title {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center;
+    font-family: 'darker grotesque';
+}
+
+.about-me-content {
+    width: 40vw; /* Maximum width for the paragraphs */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between paragraphs */
+    font-family: 'darker grotesque';
+}
+
+.para {
+    color: rgba(255, 255, 255, 0.664);
+    text-align: justify; /* Align text for neat paragraphs */
+}
+
+.para h3 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Space between subheading and paragraph */
+    color: white;
+}
+
+.para p {
+    margin: 0; /* Reset default margin for the paragraph */
+    line-height: 1; /* Line spacing for better readability */
+    font-size: 1.5rem;
+}
+
+hr {
+    border: none; /* Remove default border styling */
+    border-top: 1px solid white; /* Add a white horizontal line */
+    margin: 10px 0; /* Add space above and below the line */
+}

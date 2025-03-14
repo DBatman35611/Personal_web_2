@@ -1,0 +1,80 @@
+body{
+    background: blue;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title{
+    font-size: 300px;
+    color: rgb(254, 254, 254);
+    
+}
+
+.circle{
+    position: absolute;
+    left: 500px;
+    top: 350px;
+    width: 500px;
+    height: 500px;
+    animation: opening_animation;
+    animation-duration: 10s;
+    
+}
+
+.ring{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.ring {
+    border-radius:50%;
+    background-color: #000;
+    -webkit-mask: radial-gradient(transparent 223px,#000 223px);
+            mask: radial-gradient(transparent 223px,#000 223px);
+  
+  }
+  .ring:before {
+    content:"";
+    display:block;
+    padding-top:100%;
+  }
+  
+  .circle {
+    margin:0 auto;
+    max-width:200px;
+   
+  }
+  
+ 
+  
+  
+
+@keyframes opening_animation {
+    0%{
+        left: 200px;
+        top: 0;
+    }
+
+    25%{
+        left: 400px;
+        top: 700px;
+    }
+
+    50%{
+        left: 600px;
+        top: 250px;
+    }
+
+    100%{
+        left: 700px;
+        top: 350px;
+    }
+}
