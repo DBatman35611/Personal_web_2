@@ -387,3 +387,29 @@ body{
 .thing-item:hover .thing-logo {
     opacity: 1;
 }
+
+
+.contact-banner{
+    height: 50vh;
+    width: 100vw;
+    background: rgb(23, 23, 23);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-title{
+    align-self: center;
+    justify-self: center;
+    color: #e8e8e8ee;
+    font-family: "Libre Baskerville", serif;
+    font-size: 4rem;
+}
+
+.contacts{
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    color: #e8e8e8ee;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+}
