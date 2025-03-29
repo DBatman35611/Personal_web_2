@@ -502,5 +502,10 @@ body{
         font-size: 1rem;
     }
     
+    .things-content{
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
 }
 
