@@ -34,8 +34,6 @@ body{
     font-family: Coolvetica-regular;
     font-weight: 500;
     
-    
-    
 }
 
 @keyframes bounce {
@@ -388,6 +386,75 @@ body{
     opacity: 1;
 }
 
+/* Media query for screens below 1200px */
+@media (max-width: 1250px) {
+    .things-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Media query for screens below 700px */
+@media (max-width: 1000px) {
+    .things-content {
+        grid-template-columns: 1fr;
+        
+    
+    }
+
+    .thing-item{
+        border-right: none;
+    }
+}
+
+  /* Media query for screens below 700px */
+@media (max-width: 950px) {
+    .title{
+        margin-left: 150px;
+        margin-right: 150px;
+        overflow: hidden;
+        align-self: center;
+        justify-self: center;
+        
+    }
+
+    .banner{
+        justify-content: center;
+        align-items: center;
+    }
+}
+  /* Media query for screens below 700px */
+  @media (max-width: 900px) {
+    .about-1st{
+        grid-template-columns: 1fr;
+    }
+
+    .about-1st p{
+        margin-top: 50px;
+    } 
+    .about-2nd{
+        grid-template-columns: 1fr;
+    }
+
+    .about-2nd img{
+        grid-row: 1;
+        width: 80%;
+    }
+
+    .about-2nd p{
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    .title{
+        font-size: 7rem;
+    }
+}
+  
+
+  
+
 
 .contact-banner{
     height: 50vh;
@@ -413,3 +480,27 @@ body{
     font-family: "Outfit", sans-serif;
     font-size: 1.5rem;
 }
+
+@media (max-width: 800px) {
+    .contact-banner{
+        grid-template-columns: 1fr;
+    }
+
+    .contacts{
+        align-items: start;
+        align-self: self-start;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    .contact-title{
+        font-size: 3rem;
+    }
+    .contacts{
+        font-size: 1rem;
+    }
+    
+}
+
