@@ -685,6 +685,11 @@ body{
     object-fit: cover;
 }
 
+/* Utility: crop 50px from bottom of media */
+.crop-bottom-50 {
+    clip-path: inset(0 0 50px 0);
+}
+
 .drone-panel-description {
     font-family: "Outfit", sans-serif;
     font-size: 0.9rem;
