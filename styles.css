@@ -656,6 +656,17 @@ body{
     margin-top: 10px;
 }
 
+/* Phone camera diagram - override default image-item img styles */
+.image-item .phone-camera-diagram {
+    width: 100% !important;
+    height: 100vh;
+    max-height: 800px;
+    border-radius: 8px;
+    object-fit: contain;
+    margin: 0 !important;
+    display: block;
+}
+
 /* Drone subsection styles */
 .drone-subsection {
     margin-top: 60px;
