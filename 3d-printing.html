@@ -13,15 +13,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="index.html" class="back-button" aria-label="Back to Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
     <div class="banner">
         <div class="title">3D Printing</div>
         <div class="arrow"></div>
     </div>
 
     <div class="content">
-        <!-- Add your detailed content here -->
-        <h2>This section is currently getting updated</h2>
-        <p>    </p>
+        <div class="prev-liquid-lens-section">
+            <div class="subsection-heading">
+                <h3>Piston</h3>
+            </div>
+            <div class="image-row">
+                <div class="image-item">
+                    <video controls muted>
+                        <source src="3D Printing Pics & Vids/Piston Video 1.mp4" type="video/mp4">
+                    </video>
+                    <p class="image-description"></p>
+                </div>
+                <div class="image-item">
+                    <p class="image-description">A simple piston I had designed because I was really fascinated by it
+                        and wanted to make my own
+                    </p>
+                </div>
+            </div>
+
+            <div class="subsection-heading">
+                <h3>Gear train</h3>
+            </div>
+            <div class="image-row">
+                <div class="image-item">
+                    <p class="image-description">A gear train I had designed in 8th grade for an 
+                        aeroponics project - where plants are suspended in the air. Then water & nutrients
+                         are sprayed onto the roots.</p>
+                </div>
+                <div class="image-item">
+                    <video controls muted>
+                        <source src="3D Printing Pics & Vids/Gear Train from 8th Grade video.mp4" type="video/mp4">
+                    </video>
+                    <p class="image-description"></p>
+                </div>
+            </div>
+
+            <div class="image-row" style="justify-content: space-around; align-items: flex-start;">
+                <div class="image-item" style="flex: 0 1 auto; margin: 0 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src="3D Printing Pics & Vids/Batarang pic.jpeg" alt="Batarang" style="width: auto; height: auto; max-width: 120%; transform: scale(1.2); clip-path: inset(40px 0 40px 0); border-radius: 12px;">
+                    <p class="image-description">My own custom designed batarang</p>
+                </div>
+                <div class="image-item" style="flex: 0 1 auto; margin: 0 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src="3D Printing Pics & Vids/Katana.jpeg" alt="Katana" style="width: auto; height: auto; max-width: 120%; transform: scale(1.2); clip-path: inset(40px 0 40px 0); border-radius: 12px;">
+                    <p class="image-description">Demon slayer katana for a friend</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <script src="animations.js"></script>
