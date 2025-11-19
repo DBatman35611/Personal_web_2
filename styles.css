@@ -578,6 +578,11 @@ body{
     background-color: #555;
 }
 
+/* Reduced gap variant for See More buttons */
+.compact-btn {
+    margin-top: 0;
+}
+
 /* Add styles for content section in individual pages */
 .content {
     padding: 40px;
@@ -754,5 +759,57 @@ body{
 @media (max-width: 700px) {
     .drone-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+    /* Hide back button on phones */
+    .back-button {
+        display: none;
+    }
+
+    /* Stack image-row content vertically */
+    .image-row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Force images to appear above text in the stacked layout */
+    .image-item:has(img),
+    .image-item:has(video) {
+        order: -1;
+    }
+
+    /* Make images larger on mobile */
+    .image-item img,
+    .image-item video {
+        width: 100%;
+        max-height: none;
+    }
+
+    /* Adjust content padding */
+    .content,
+    .content-liquid-lens {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .content-liquid-lens h2,
+    .content-liquid-lens p {
+        padding-left: 0;
+    }
+
+    /* Adjust phone camera diagram height */
+    .image-item .phone-camera-diagram {
+        height: auto;
+        max-height: 500px;
+    }
+    
+    /* Adjust subsection headings padding */
+    .subsection-heading h3 {
+        font-size: 1.5rem;
+        padding: 0 20px;
     }
 }
