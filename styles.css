@@ -578,10 +578,10 @@ body{
     background-color: #555;
 }
 
-/* Reduced gap variant for See More buttons */
+/* Reduced gap variant for See More buttons - Removed to align buttons
 .compact-btn {
     margin-top: 0;
-}
+} */
 
 /* Add styles for content section in individual pages */
 .content {
